@@ -1,0 +1,76 @@
+body{
+  background-color: blue;
+  background-color: LightGoldenrodYellow;
+  background-color: #008b8b;
+  /* Hexidecimal */
+/* comment */
+/* rgb color red: 0-255 green: 0-255 blue:0-255 */
+background-color: rgb(255, 0, 0);
+/* red */
+background-color: rgb(255,255,255);
+/* white */
+background-color: rgb(0,0,0);
+/* black */
+background-color: DarkSalmon;
+
+}
+
+section{
+  background-color: darkmagenta;
+  background-color: rgba(255,255,255,0.5);
+  /* the 0.8 is the opacity (4thcomponent). white with a 50% opacity */
+}
+
+h1{
+  color: orange;
+  font-family: 'Dancing Script', cursive;
+}
+/* id only once per document */
+/* for class use many times per documents */
+/* span class allows me yo do a style  */
+
+
+h3{
+  color: #ffffff
+}
+
+h3 em{
+  font-family: sans-serif;
+  color: black;
+  text-decoration: underline;
+}
+
+li{
+  font-size: 20px;
+  list-style: circle;
+}
+
+ul li{
+  list-style: none;
+}
+/* for id, use oonce per document */
+#centername{
+text-align: center;
+}
+
+#hello{
+  font-style: italic;
+}
+/* for class use as many times u want per document */
+.bolder{
+font-weight: bolder;
+font-size: 20px;
+}
+a{
+color: green;
+text-decoration: none;
+}
+
+a:visited{
+color: aqua;
+}
+
+a:hover{
+background-color: red;
+font-style: italic;
+}

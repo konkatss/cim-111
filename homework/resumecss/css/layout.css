@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+body{
+  background-color: lightsteelblue;
+
+  /* comment */
+  /* rgb color red: 0-255 green: 0-255 blue: 0-255 */
+
+}
+
+section{
+
+  background-color: rgba(255,255,255,0.5); /* white with a 50% opacity */
+}
+
+h1{
+  color: darkred;
+  font-family: 'Roboto', cursive;
+}
+
+h3{
+  color: #ffffff;
+  font-family: 'Roboto', cursive;
+  font-weight: 800; /* Bolder dancing script */
+}
+
+h3 em{
+  font-family: sans-serif;
+  color: black;
+  text-decoration: underline;
+}
+p{
+background-color: lightcyan;
+}
+
+#PHONE {
+ display: block;
+ font-weight: bold;
+ font-size: smaller;
+ color: white
+}
+
+li{
+  font-size: 20px;
+  list-style: circle;
+}
+
+ul li{
+  list-style: circle;
+}
+
+/* # for id, use once per document */
+#hi{
+  text-align: center;
+}
+#Hello{
+  background-color: yellow
+}
+#bye{
+  cursor: wait;
+}
+#good{
+  font-weight:lighter;
+}
+#yay{
+  table-layout: auto;
+
+}
+address {
+  font-family: sans-serif;
+  color: navy;
+  text-decoration: underline;
+}
+
+table, th, td {
+border: 1px solid black;
+}
+
+.intro {
+  color: red;
+  font-weight: bold;
+}
+.head {
+color:#663399;
+font-weight: bold;}
+/* . for class, use many times per document */
+.bolder{
+font-weight: bolder;
+font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: darkred;
+  font-style: normal;
+}
+
+a:hover{
+  background-color: red;
+  font-style: italic;
+}
