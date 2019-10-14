@@ -1,0 +1,39 @@
+@import "desktop.css";
+
+header{
+  width: 380px;
+
+
+}
+main{
+  width: 380px;
+}
+footer{
+  width: 380px
+}
+nav ul li{
+  display: block;
+    text-align: center;
+
+}
+nav{
+  width:380px;
+}
+
+
+#grid1, #grid2, #grid3, #grid4{
+  width:380px;
+  display:block;
+  height: auto;
+}
+#grid3 img{
+  width: 300px;
+}
+#grid4 address{
+  margin-bottom: 10px;
+
+}
+#grid4 a{
+  margin-bottom: 10px;
+display: block;
+}
