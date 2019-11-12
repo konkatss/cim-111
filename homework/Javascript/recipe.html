@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title class="fancy_title"> Easy Angel Hair Pasta</title>
+    <link type="text/css" rel="stylesheet" href="js/lightGallery.css" />
+
+    <style media="screen">
+      .char1{
+        font-size: 50px;
+      }
+      
+    </style>
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+
+
+    <h1 id="changeBackground">My Favorite All Weekend Meal</h1>
+<h2 id="toggle">The easiest recipe has become my favorite. With only a few ingredients I travel to Italy and have stored food for the whole weekend</h2>
+<h3 id="Italy">This recipe comes from a random lady in Italy</h3>
+<h2 id="changeText">Let's get cooking</h2>
+
+<ol>
+
+
+  <li id="salt"class="font"> Bring a large pot of salted water to a boil.</li>
+  <li id="tomato"class="font"> Heat a large skillet over medium heat and add the oil and tomatoes. Cook until the tomatoes are soft and start to fall apart, about 10 minutes.</li>
+  <li id="timing"class="font">  Add the pasta to the boiling water and cook according to the package instructions until al dente (3 minutes).
+</li>
+  <li class="font"> Add the garlic, salt, pepper, and red pepper flakes to the tomato sauce. Stir, and cook for about 3-4 minutes, breaking tomatoes in the process. </li>
+  <li class="font">  Drain the pasta. Add the pasta and chopped herbs to the tomato sauce. Stir, and cook for 2-3 minutes. </li>
+
+
+
+</ol>
+<div id="lightgallery">
+<a  href="images/boil.jpg"><img src="images/boil.jpg" height="250"></a>
+<a href="images/tomatoes.jpg"><img src="images/tomatoes.jpg" height="250"></a>
+<a href="images/garlic.jpg"><img src="images/garlic.jpg" height="250"></a>
+<a href="images/drained.jpg"><img src="images/drained.jpg" height="250"></a>
+<a href="images/done.jpg"><img src="images/done.jpg" height="250"></a>
+</div>
+
+
+
+
+
+
+
+<p id="changeText1"></p>
+<!-- <p id="changeText2"></p>
+<p id="changeText3"></p>
+<p id="changeText4"></p>
+<p id="changeText5"></p>
+<p id="changeText6"></p> -->
+
+<h3 id="section1toggle"> HOW TO STORE LEFTOVERS</h3>
+<p id="sect1hide">
+Store this Angel Hair Pasta in the skillet or in a bowl, tightly covered with a lid to prevent drying out. It will stay in the fridge for up to 4 days. It tastes great when reheated.</h3>
+</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.lettering-0.6.1.min.js" > </script>
+
+
+    <script src="js/lightgallery.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+       $("#lightgallery").lightGallery();
+
+       $("#changeBackground").lettering();
+
+
+      $("h1").css("color","tomato");
+      $("#underline").css("text-decoration","underline");
+      $("#Italy").css("background-color","mistyrose");
+      $(".font").css("font-family","cursive" );
+      $("#toggle").hide();
+      $("#sect1hide").hide();
+
+
+     $("#changeBackground").click(function(){
+        $("body").css("background-color","lightgreen");
+
+
+            $("#toggle").slideToggle(1000);
+
+
+      });
+
+      $("#section1toggle").click(function(){
+
+
+          $("#sect1hide").slideToggle(1000);
+
+
+    });
+
+
+
+        $("#salt").mouseenter(function(){
+        $("#changeText1").html("Don’t forget about the salt. Salt adds flavor to the pasta! When boiling pasta, add at least a tablespoon of salt per 4 quarts of water. ");
+
+        });
+
+        $("#timing").mouseenter(function(){
+        $("#changeText1").html("Perfect timing. To make this dish super fast, we are cooking the pasta and the tomato sauce simultaneously. It is best to start boiling the pasta right before the garlic goes into the tomato sauce. This way, the sauce and the pasta will be ready in 3-4 minutes, so you can combine them and serve. If you don’t feel like multitasking, you can boil the pasta beforehand and rinse it with cold water (to prevent sticking). When the sauce is ready, just add the pasta and cook it until heated through.");
+
+        });
+
+        $("#tomato").mouseenter(function(){
+        $("#changeText1").html("Tasty tomatoes. Tomatoes are the main ingredient here. So, make sure you use flavorful tomatoes. ");
+
+        });
+
+        $("#salt").mouseleave(function(){
+          $("#changeText1").html("");
+        });
+
+
+        $("#timing").mouseleave(function(){
+          $("#changeText1").html("");
+        });
+
+        $("#tomato").mouseleave(function(){
+          $("#changeText1").html("");
+        });
+
+
+
+        });
+</script>
+
+
+
+
+  </body>
+</html>
