@@ -51,6 +51,13 @@ border-style: dashed;
 
   }
 
+  main{
+    height: auto;
+    /* if height is set to auto and the container has no content the box will collapse and not appear */
+    margin: 0 auto;
+
+  }
+
 
   nav {
 background-color: #B85D79;
@@ -164,7 +171,6 @@ margin: 10px 0px auto;
 width: 920px;
 height: auto;
 margin: 0px auto;
-display: grid;
 text-align: justify;
 font-size: 12.5px;
 padding: 20px;
@@ -181,6 +187,9 @@ color: #9F3857;
 font-weight: 500;
 font-size: 18px;
 font-family: 'Jockey One', sans-serif;
+
+display: grid;
+
 
 
 }
@@ -269,7 +278,7 @@ margin: 10px 0px auto;
   text-align: justify;
 
   display: grid;
-  grid-template-rows: 150;
+  grid-template-rows: 150px;
   grid-template-columns: 420px 150px 300px;
   grid-column-gap: 45px;
   color: #9F3857;
@@ -307,20 +316,3 @@ footer h1{
   margin: 20px auto;
 
 }
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.lettering-0.6.1.min.js" > </script>
-
-<script src="js/lightgallery.js">
-
-</script>
-
-<script type="text/javascript">
-
-
-
-$(document).ready(function(){
-   $("#lightgallery").lightGallery();
-   $("#lightgallery1").lightGallery();
-    $("#lightgallery2").lightGallery();
-
-</script>

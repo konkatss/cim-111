@@ -7,6 +7,7 @@
 
     <!-- max-width => if your browser is greater than 600px load mobile.css -->
     <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="js/lightgallery.css">
     <style media="screen">
 
       </style>
@@ -79,6 +80,7 @@
       <h3>University of Miami, Class of 2021
         <div id="lightgallery2">
         <a href="images/um.png"><img src="images/um.png"></a>
+      </div>
       </h3>
 <p>      Bachelor of Science in Psychology
 <br>
@@ -89,10 +91,10 @@
   GPA: 3.92/4
 </p>
 
-        <h4> Honors </h4>
+        <h4 id="honors"> Honors </h4>
 
 
-        <ul >
+        <ul id="list">
           <li>Recipient of presidential merit scholarship</li>
           <li>University of Miami’s President’s and Provost’s Honor Rolls and Dean’s List</li>
           <li>Golden Key Honor Society</li>
@@ -293,11 +295,35 @@
 
   <!-- The telephone tag is clickable and call-able if someone clicks on it on the website -->
    <a href="tel:786-395-4496">786-395-4496</a>
-E-mail:kxk530@miami.edu
+
+<span id="email">E-mail:kxk530@miami.edu</span>
 
 
 
   </section>
 </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/lightgallery.js"></script>
+
+<script type="text/javascript">
+
+
+
+$(document).ready(function(){
+   $("#lightgallery").lightGallery();
+   $("#lightgallery1").lightGallery();
+    $("#lightgallery2").lightGallery();
+
+    $("#list").hide();
+    $("#honors").click(function(){
+      $("#list").slideToggle(1000);
+    });
+
+
+});
+</script>
   </body>
 </html>

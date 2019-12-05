@@ -6,9 +6,7 @@ header{
 
 }
 main{
-  width: 380px;
   text-align: center;
-margin-left: 32px;
 }
 footer{
   width: 380px
@@ -49,4 +47,12 @@ display: block;
 #grid5 img{
   width: AUTO;
   height: 80px;
+}
+
+#grid9{
+  width: 300px;
+}
+
+#email{
+  display:block;
 }
