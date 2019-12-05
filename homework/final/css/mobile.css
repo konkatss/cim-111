@@ -1,0 +1,52 @@
+@import "desktop.css";
+
+header{
+  width: 380px;
+
+
+}
+main{
+  width: 380px;
+  text-align: center;
+margin-left: 32px;
+}
+footer{
+  width: 380px
+
+
+}
+
+nav ul li{
+  display: block;
+    text-align: center;
+
+}
+nav{
+  width:380px;
+}
+#grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid7, #grid8, #grid9 {
+  width:380px;
+  display:block;
+  height: AUTO;
+
+
+}
+#grid6 a{
+  margin-bottom: 10px;
+display: block;
+}
+
+#grid7 a{
+  margin-bottom: 10px;
+display: block;
+}
+
+
+#grid2 img{
+  width: auto;
+  height: 300px;
+}
+#grid5 img{
+  width: AUTO;
+  height: 80px;
+}
